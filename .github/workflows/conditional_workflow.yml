@@ -14,6 +14,12 @@ jobs:
       - run: sleep 5
     needs: job1
 
+  job2-1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep 5
+    needs: job1
+
   job3:
     runs-on: ubuntu-latest
     steps:
