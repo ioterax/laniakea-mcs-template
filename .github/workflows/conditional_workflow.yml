@@ -17,7 +17,14 @@ jobs:
   job2-1:
     runs-on: ubuntu-latest
     steps:
-      - run: sleep 5
+      - name: test
+        run: sleep 5
+      - name: test
+        run: sleep 5
+      - name: test
+        run: sleep 5
+      - name: test
+        run: sleep 5
     needs: job1
 
   job3:
